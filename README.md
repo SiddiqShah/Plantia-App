@@ -1,5 +1,6 @@
 # 🌱 Plant Disease Detector
-    A Flutter-based mobile application that helps farmers and plant lovers to identify plant diseases by capturing images. The app uses Firebase Authentication, Cloud Firestore, and Firebase Storage to manage users and store diagnosis history.
+    A Flutter-based mobile application that helps farmers and plant lovers to identify plant diseases by capturing images.
+    The app uses Firebase Authentication, Cloud Firestore, and Firebase Storage to manage users and store diagnosis history.
 
 # Features
     Capture Plant Images using a Camera
