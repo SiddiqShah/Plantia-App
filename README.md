@@ -40,7 +40,7 @@
     cd plant-disease-detector
 
 # Setup Instructions
-    # Clone the repository
+ # Clone the repository
     git clone https://github.com/your-username/plant-disease-detector.git
     cd plant-disease-detector
 
