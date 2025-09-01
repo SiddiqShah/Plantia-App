@@ -90,4 +90,21 @@ class LoginProvider with ChangeNotifier{
       setLoading(false);
     }
   }
+
+  // forget password
+  Future<void> resetPassword(BuildContext context, String email) async {
+    setLoading(true);
+    try {
+      await _auth.sendPasswordResetEmail(email: email);
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Password reset email sent')),
+      );
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Password reset failed: $e')),
+      );
+    } finally {
+      setLoading(false);
+    }
+  }
 }

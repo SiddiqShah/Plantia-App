@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_disease_detector/provider/login_provider.dart';
 import 'package:plant_disease_detector/provider/password_visibility_provider.dart';
+import 'package:plant_disease_detector/screens/forgot_pass_screen.dart';
 import 'package:plant_disease_detector/screens/sign_up_screen.dart';
 import 'package:plant_disease_detector/widgets/round_button.dart';
 import 'package:provider/provider.dart';
@@ -146,14 +147,16 @@ class _LoginScreenState extends State<LoginScreen> {
               child: Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "Forgot password ?",
-                    style: TextStyle(color: Color(0xff256724)),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ForgotPassScreen()),
+                      );
+                    },
+                    child: const Text("Forgot Password?", style: TextStyle(color: Color(0xff256724)),),
                   ),
-                ),
               ),
-            ),
+              ),
 
             const SizedBox(height: 40),
 

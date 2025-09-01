@@ -70,7 +70,7 @@ class RecognitionScreen extends StatelessWidget {
         return Scaffold(
           backgroundColor: const Color.fromARGB(255, 225, 241, 216),
           appBar: AppBar(
-            title: const Text("Recognition"),
+            title: Center(child: const Text("Recognition", style: TextStyle(fontWeight: FontWeight.bold),)),
             backgroundColor: const Color.fromARGB(255, 225, 241, 216),
             elevation: 0,
           ),
@@ -79,42 +79,45 @@ class RecognitionScreen extends StatelessWidget {
             child: Column(
               children: [
                 // Image capture section
-                Container(
-                  width: double.infinity,
-                  height: 300,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.grey.shade300),
-                  ),
-                  child: provider.image == null
-                      ? Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Icon(
-                              Icons.camera_alt,
-                              size: 80,
-                              color: Colors.grey.shade400,
-                            ),
-                            const SizedBox(height: 10),
-                            Text(
-                              "Tap to capture plant image",
-                              style: TextStyle(
-                                color: Colors.grey.shade600,
-                                fontSize: 16,
+                GestureDetector(
+                  onTap: () => _pickImage(context),
+                  child: Container(
+                    width: double.infinity,
+                    height: 300,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: Colors.grey.shade300),
+                    ),
+                    child: provider.image == null
+                        ? Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.camera_alt,
+                                size: 80,
+                                color: Colors.grey.shade400,
                               ),
+                              const SizedBox(height: 10),
+                              Text(
+                                "Tap to capture plant image",
+                                style: TextStyle(
+                                  color: Colors.grey.shade600,
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ],
+                          )
+                        : ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                            child: Image.file(
+                              provider.image!,
+                              width: double.infinity,
+                              height: double.infinity,
+                              fit: BoxFit.cover,
                             ),
-                          ],
-                        )
-                      : ClipRRect(
-                          borderRadius: BorderRadius.circular(20),
-                          child: Image.file(
-                            provider.image!,
-                            width: double.infinity,
-                            height: double.infinity,
-                            fit: BoxFit.cover,
                           ),
-                        ),
+                  ),
                 ),
 
                 const SizedBox(height: 20),

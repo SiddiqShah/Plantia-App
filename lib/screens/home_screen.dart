@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   radius: 25,
                   backgroundImage: user?.photoURL != null
                       ? NetworkImage(user!.photoURL!)
-                      : const AssetImage("assets/default_avatar.png")
+                      : const AssetImage("assets/images/default_avatar.png")
                           as ImageProvider,
                 ),
                 title: Text(

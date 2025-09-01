@@ -20,7 +20,6 @@ void main() async {
         ChangeNotifierProvider(create: (_) => LoginProvider()),
         ChangeNotifierProvider(create: (_) => SignUpProvider()),
         ChangeNotifierProvider(create: (_) => RecognitionProvider()),
-
       ],
       child: const MyApp(),
     ),
