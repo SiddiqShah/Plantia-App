@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011365801557",
+    "project_id": "plant-disease-app-afb08",
+    "storage_bucket": "plant-disease-app-afb08.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011365801557:android:6b6f13e4d7681574d76edc",
+        "android_client_info": {
+          "package_name": "com.example.plant_disease_detector"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEk68CucUqrBooM_v0gLm_AKAYDS43z40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
