@@ -5,7 +5,7 @@ import 'package:plant_disease_detector/provider/password_visibility_provider.dar
 import 'package:plant_disease_detector/provider/recognition_provider.dart';
 import 'package:plant_disease_detector/provider/signup_provider.dart';
 import 'package:plant_disease_detector/screens/home_screen.dart';
-import 'package:plant_disease_detector/screens/login_screen.dart';
+import 'package:plant_disease_detector/screens/welcome_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -59,7 +59,7 @@ class AuthWrapper extends StatelessWidget {
           return const HomeScreen();
         } else {
           // agar user login nahi -> LoginScreen
-          return const LoginScreen();
+          return const WelcomeScreen();
         }
       },
     );
