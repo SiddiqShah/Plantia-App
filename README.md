@@ -2,6 +2,9 @@
     A Flutter-based mobile application that helps farmers and plant lovers to identify plant diseases by capturing images.
     The app uses Firebase Authentication, Cloud Firestore, and Firebase Storage to manage users and store diagnosis history.
 
+# APK Link
+    https://drive.google.com/file/d/1xnTRi_XMDmi9x78l2kaVZCAl9DeyHYQX/view?usp=sharing
+
 # Features
     Capture Plant Images using a Camera
     Add the plant name and disease name
