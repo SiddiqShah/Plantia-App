@@ -1,4 +1,4 @@
-# 🌱 Plant Disease Detector
+# 🌱 Plant Disease Diary
     A Flutter-based mobile application that helps farmers and plant lovers to identify plant diseases by capturing images.
     The app uses Firebase Authentication, Cloud Firestore, and Firebase Storage to manage users and store diagnosis history.
 
@@ -74,5 +74,10 @@
 
 # Author
     Muhammad Siddiq Shah
-    Email: shahsiddiq004@gmail.com
+    Email: shahsiddiq004@gmail.com#
+
+# Video
+    https://github.com/user-attachments/assets/e4e19bdb-7b98-43c2-a861-9df74691c4ec
+
+
 
