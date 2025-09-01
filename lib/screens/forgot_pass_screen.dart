@@ -26,6 +26,7 @@ class _ForgotPassScreenState extends State<ForgotPassScreen> {
 
     return Scaffold(
       body: SingleChildScrollView(
+        
         child: Column(
           children: [
             // Top Image

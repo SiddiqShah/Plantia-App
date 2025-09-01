@@ -187,7 +187,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 if (!loginProvider.loading) {
                   loginProvider.signInWithGoogleForLogin(context);
                 }
-              },
+              }, 
             ),
 
             Row(
